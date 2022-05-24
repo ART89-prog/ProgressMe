@@ -19,91 +19,31 @@ $(() => {
 	$(':root').css('--scroll_width', widthScroll() + 'px')
 
 
-	// Маска ввода
-	$('input[type=tel]').inputmask('+7 (999) 999-99-99')
-
-	// Выбор файла
-	$('body').on('change', '.form input[type=file]', function () {
-		let label = $(this).closest('.file').find('label')
-
-		label.addClass('active')
-		label.find('span').text($(this).val())
-	})
-
-	$('body').on('click', '.form .file .remove_btn', function (e) {
-		e.preventDefault()
-
-		let field = $(this).closest('.field')
-
-		field.find('input[type=file]').val('')
-		field.find('label').removeClass('active')
-		field.find('label span').text('Прикрепить файл')
-	})
 
 
 	// Аккордион
-	$('body').on('click', '.accordion .accordion_item .head', function (e) {
+	$('body').on('click', '.footer_item-title', function (e) {
 		e.preventDefault()
 
-		const $item = $(this).closest('.accordion_item'),
-			$accordion = $(this).closest('.accordion')
+		const $item = $(this).closest('.footer_item'),
+			$accordion = $(this).closest('.footer_items')
 
 		if ($item.hasClass('active')) {
-			$item.removeClass('active').find('.data').slideUp(300)
+			$item.removeClass('active').find('.footer_item ul').slideUp(300)
 		} else {
-			$accordion.find('.accordion_item').removeClass('active')
-			$accordion.find('.data').slideUp(300)
+			$accordion.find('.footer_item').removeClass('active')
+			$accordion.find('.footer_item ul').slideUp(300)
 
-			$item.addClass('active').find('.data').slideDown(300)
+			$item.addClass('active').find('.footer_item ul').slideDown(300)
 		}
 	})
 
 
-	// Табы
-	var locationHash = window.location.hash
+	$('.more-btn a.toggle').click(function(e) {
+		e.preventDefault();
+		$('.posts').css('display', 'block');
+    });
 
-	$('body').on('click', '.tabs button', function (e) {
-		e.preventDefault()
-
-		if (!$(this).hasClass('active')) {
-			const $parent = $(this).closest('.tabs_container'),
-				activeTab = $(this).data('content'),
-				$activeTabContent = $(activeTab),
-				level = $(this).data('level')
-
-			$parent.find('.tabs:first button').removeClass('active')
-			$parent.find('.tab_content.' + level).removeClass('active')
-
-			$(this).addClass('active')
-			$activeTabContent.addClass('active')
-		}
-	})
-
-	if (locationHash && $('.tabs_container').length) {
-		const $activeTab = $('.tabs button[data-content=' + locationHash + ']'),
-			$activeTabContent = $(locationHash),
-			$parent = $activeTab.closest('.tabs_container'),
-			level = $activeTab.data('level')
-
-		$parent.find('.tabs:first button').removeClass('active')
-		$parent.find('.tab_content.' + level).removeClass('active')
-
-		$activeTab.addClass('active')
-		$activeTabContent.addClass('active')
-
-		$('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
-	}
-
-
-	// Fancybox
-	Fancybox.defaults.autoFocus = false
-	Fancybox.defaults.dragToClose = false
-	Fancybox.defaults.l10n = {
-		CLOSE: "Закрыть",
-		NEXT: "Следующий",
-		PREV: "Предыдущий",
-		MODAL: "Вы можете закрыть это модальное окно нажав клавишу ESC"
-	}
 
 
 	// Моб. версия
