@@ -1,0 +1,109 @@
+// Моб. меню
+$('.mob_header .mob_menu_btn').click((e) => {
+	e.preventDefault()
+
+	$('.mob_header .mob_menu_btn').addClass('active')
+	$('body').addClass('menu_open')
+	$('header').addClass('show')
+	$('.overlay').fadeIn(300)
+})
+
+$('header > .close, .overlay').click((e) => {
+	e.preventDefault()
+
+	$('.mob_header .mob_menu_btn').removeClass('active')
+	$('body').removeClass('menu_open')
+	$('header').removeClass('show')
+	$('.overlay').fadeOut(300)
+})
+
+
+if (is_touch_device()) {
+	$('header .menu .item.menu-item-has-children > a').addClass('touch_link')
+
+	$('header .menu .item.menu-item-has-children > a').click(function (e) {
+		const $dropdown = $(this).next()
+
+		if ($dropdown.css('visibility') === 'hidden') {
+			e.preventDefault()
+
+			$('header .menu .sub_menu').removeClass('show')
+			$dropdown.addClass('show')
+
+			$('body').css('cursor', 'pointer')
+		}
+	})
+
+	// Закрываем под. меню при клике за её пределами
+	$(document).click((e) => {
+		if ($(e.target).closest('.menu').length === 0) {
+			$('header .menu .sub_menu').removeClass('show')
+
+			$('body').css('cursor', 'default')
+		}
+	})
+
+
+	// Закрытие моб. меню свайпом справо на лево
+	let ts
+
+	$('body').on('touchstart', (e) => { ts = e.originalEvent.touches[0].clientX })
+
+	$('body').on('touchend', (e) => {
+		let te = e.originalEvent.changedTouches[0].clientX
+
+		if ($('body').hasClass('menu_open') && ts > te + 50) {
+			// Свайп справо на лево
+			$('.mob_header .mob_menu_btn').removeClass('active')
+			$('body').removeClass('menu_open')
+			$('header').removeClass('show')
+			$('.overlay').fadeOut(300)
+		} else if (ts < te - 50) {
+			// Свайп слева на право
+		}
+	})
+
+
+
+	// Мини всплывающие окна
+	$('.mini_modal_link').click(function(e) {
+		e.preventDefault()
+
+		const modalId = $(this).data('modal-id')
+
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active')
+			$('.mini_modal').removeClass('active')
+
+			if (is_touch_device()) $('body').css('cursor', 'default')
+		} else {
+			$('.mini_modal_link').removeClass('active')
+			$(this).addClass('active')
+
+			$('.mini_modal').removeClass('active')
+			$(modalId).addClass('active')
+
+			if (is_touch_device()) $('body').css('cursor', 'pointer')
+		}
+	})
+
+	// Закрываем всплывашку при клике за её пределами
+	$(document).click((e) => {
+		if ($(e.target).closest('.modal_cont').length === 0) {
+			$('.mini_modal, .mini_modal_link').removeClass('active')
+
+			if (is_touch_device()) $('body').css('cursor', 'default')
+		}
+	})
+
+	// Закрываем всплывашку при клике на крестик во всплывашке
+	$('.mini_modal .close').click((e) => {
+		e.preventDefault()
+
+		$('.mini_modal, .mini_modal_link').removeClass('active')
+
+		if (is_touch_device()) $('body').css('cursor', 'default')
+	})
+}
+
+

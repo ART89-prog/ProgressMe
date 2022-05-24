@@ -1,0 +1,485 @@
+@media (max-width: 1179px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --sidebar_width: 300px;
+        --font_size: 15px;
+    }
+
+
+    .buttonUp
+    {
+        right: 20px;
+        bottom: 20px;
+
+        margin-right: 0;
+    }
+
+
+    .content_flex .content
+    {
+        width: calc(100% - var(--sidebar_width) - 25px);
+    }
+
+    .content_flex .content > * + *
+    {
+        margin-top: 45px;
+    }
+
+    .content_flex .content.bg
+    {
+        padding: 25px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header.inner
+    {
+        margin-bottom: 40px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside > * + *
+    {
+        margin-top: 25px;
+    }
+
+
+    aside .block
+    {
+        padding: 25px;
+    }
+
+    aside .block_title
+    {
+        margin-bottom: 25px;
+    }
+
+
+
+    aside .about_author .info
+    {
+        padding: 25px;
+    }
+
+
+
+    aside .cats a
+    {
+        padding: 10px 0 10px 20px;
+    }
+
+
+
+    aside .subscribe form
+    {
+        margin: 0 -25px -25px;
+        padding: 25px;
+    }
+
+    aside .subscribe form .line
+    {
+        margin-bottom: 20px;
+    }
+
+    aside .subscribe form .submit_btn
+    {
+        height: 44px;
+        padding: 0 25px;
+    }
+
+
+
+    aside .articles .item .thumb + *
+    {
+        width: calc(100% - 97px);
+    }
+
+    aside .articles .item .cat
+    {
+        margin-bottom: 7px;
+    }
+
+    aside .articles .item .name
+    {
+        font-size: 13px;
+        line-height: 17px;
+
+        letter-spacing: .025em;
+    }
+
+
+
+    aside .bets .item
+    {
+        width: calc(100% + 50px);
+        margin: 0 -25px;
+    }
+
+    aside .bets .item > * + *
+    {
+        margin-left: 10px;
+    }
+
+    aside .bets .item .price
+    {
+        font-size: 14px;
+    }
+
+    aside .bets .item .links > * + *
+    {
+        margin-left: 5px;
+    }
+
+    aside .bets .item .links a
+    {
+        font-size: 10px;
+
+        padding: 0 8px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head > * + *,
+    .page_head .cont > * + *
+    {
+        margin-top: 25px;
+    }
+
+    .content .page_head
+    {
+        margin-bottom: 25px;
+    }
+
+
+    .breadcrumbs
+    {
+        margin-top: 0;
+    }
+
+
+    .page_title
+    {
+        font-size: 22px;
+
+        padding-left: 0;
+    }
+
+    .page_title:before,
+    .page_title:after
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        line-height: 23px;
+    }
+
+    .text_block h2
+    {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .text_block h3
+    {
+        font-size: 19px;
+        line-height: 27px;
+    }
+
+
+    .text_block img
+    {
+        display: block;
+
+        max-width: calc(100% + 50px);
+        margin-right: -25px;
+        margin-left: -25px;
+    }
+
+
+    .text_block table td
+    {
+        padding: 13px 20px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        margin-bottom: 50px;
+    }
+
+    .first_section .cont
+    {
+        min-height: 520px;
+        padding-top: 60px;
+        padding-bottom: 45px;
+    }
+
+
+    .first_section .info
+    {
+        width: 430px;
+    }
+
+    .first_section .info .title
+    {
+        font-size: 22px;
+        line-height: 36px;
+    }
+
+
+    .first_section .img
+    {
+        top: 75px;
+
+        height: 600px;
+        margin-right: -300px;
+    }
+
+
+    .first_section .photo
+    {
+        right: 20px;
+
+        max-height: 97%;
+    }
+
+
+
+    /*-----------
+        Posts
+    -----------*/
+    .posts .row
+    {
+        margin-bottom: -25px;
+        margin-left: -25px;
+    }
+
+    .posts .row > *
+    {
+        width: calc(50% - 25px);
+        margin-bottom: 25px;
+        margin-left: 25px;
+    }
+
+    .posts .row > *.big
+    {
+        width: calc(100% - 25px);
+    }
+
+
+    .posts .post .info
+    {
+        padding: 15px 20px 15px 0;
+    }
+
+    .posts .post .info > *
+    {
+        margin-left: 20px;
+    }
+
+
+    .posts .post .cat
+    {
+        width: calc(100% - 20px);
+    }
+
+    .posts .post .name
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        width: calc(100% - 20px);
+
+        letter-spacing: .025em;
+    }
+
+    .posts .post .desc
+    {
+        font-size: 13px;
+        line-height: 17px;
+
+        width: calc(100% - 20px);
+    }
+
+
+
+    .posts .post.big .info
+    {
+        padding: 20px 40px 20px 20px;
+    }
+
+    .posts .post.big .cat
+    {
+        margin-bottom: 15px;
+    }
+
+    .posts .post.big .author,
+    .posts .post.big .date
+    {
+        margin-bottom: 20px;
+    }
+
+    .posts .post.big .name
+    {
+        font-size: 21px;
+        line-height: 31px;
+
+        margin-bottom: 15px;
+    }
+
+    .posts .post.big .desc
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        margin-bottom: 20px;
+    }
+
+
+
+    .posts.related .row
+    {
+        margin-bottom: -40px;
+        margin-left: -25px;
+    }
+
+    .posts.related .row > *
+    {
+        width: calc(50% - 25px);
+        margin-bottom: 40px;
+        margin-left: 25px;
+    }
+
+
+
+    /*---------------
+        Post info
+    ---------------*/
+    .post_info .head
+    {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+
+    .post_info .head .author,
+    .post_info .head .date
+    {
+        margin-bottom: 20px;
+    }
+
+    .post_info .head .post_title
+    {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .post_info .head img
+    {
+        width: calc(100% + 50px);
+        margin: 30px -25px 0;
+    }
+
+
+
+    /*--------------
+        Comments
+    --------------*/
+    .comments .block_title
+    {
+        font-size: 17px;
+        line-height: 21px;
+
+        margin-bottom: 25px;
+    }
+
+    .comments .children
+    {
+        padding-left: 30px;
+    }
+
+    .comments .children,
+    .comments .comment + .comment
+    {
+        margin-top: 30px;
+    }
+
+    .comments .comment .name
+    {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+
+
+    /*-----------------
+        Add comment
+    -----------------*/
+    .comment-respond .block_title
+    {
+        font-size: 17px;
+        line-height: 21px;
+
+        margin-bottom: 25px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        line-height: 24px;
+
+        margin-top: 80px;
+        padding: 20px 0;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}

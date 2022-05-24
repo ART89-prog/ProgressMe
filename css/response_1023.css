@@ -1,0 +1,171 @@
+@media (max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .content_flex .content
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .mob_header
+    {
+        display: block;
+    }
+
+
+    header
+    {
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: 0;
+
+        width: 310px;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+
+        transition: transform .3s linear;
+        transform: translateX(-100%);
+
+        background: #fff;
+    }
+
+    header.show
+    {
+        transform: translateX(0);
+    }
+
+
+    header .mob_scroll
+    {
+        display: flex;
+        overflow: auto;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 0;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    header .mob_scroll > *
+    {
+        width: 100%;
+    }
+
+
+    header .info
+    {
+        display: none;
+    }
+
+    header .cont
+    {
+        padding: 0;
+    }
+
+
+    header .menu
+    {
+        display: block;
+
+        width: 100%;
+        margin: 0;
+        padding: 30px;
+
+        background: none;
+    }
+
+    header .menu .mob_title
+    {
+        display: block;
+    }
+
+    header .menu .item > a
+    {
+        color: var(--text_block);
+        font-size: 13px;
+        line-height: 18px;
+
+        min-height: 0;
+        padding: 8px 0;
+
+        text-align: left;
+
+        justify-content: flex-start;
+    }
+
+    header .menu .item > a:after
+    {
+        display: none;
+    }
+
+    header .menu .item > a span
+    {
+        max-width: calc(100% - 20px);
+    }
+
+    header .menu .item > a br
+    {
+        display: none;
+    }
+
+    header .menu .item > a .icon
+    {
+        color: #b98747;
+    }
+
+
+    header .menu .item .sub_menu,
+    header .menu .item:hover .sub_menu
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        display: none;
+        visibility: hidden;
+
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding: 20px;
+
+        pointer-events: auto;
+
+        opacity: 1;
+        border: none;
+        border-radius: 3px;
+        background: #f2f0e3;
+    }
+
+    header .menu .item > a.touch_link + .sub_menu.show
+    {
+        display: block;
+        visibility: visible;
+    }
+
+    header .menu .sub_menu a
+    {
+        color: var(--text_block);
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+
+
+}
