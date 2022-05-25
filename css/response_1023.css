@@ -123,14 +123,15 @@
         border: none;
         border-radius: 3px;
         background: none;
-       
+        margin-left: 20px;
+        box-shadow: none;       
     }
     header .menu .item .sub_menu a {
         font-size: 15px;
         font-weight: 600;
         text-transform: capitalize; 
-        padding-top: 20px;
-        padding-bottom: 20px; 
+        padding-top: 10px;
+        padding-bottom: 10px; 
         margin-top: 0;  
         border-top: 1px solid #EFEFEF;     
     }
@@ -153,8 +154,8 @@
     header .close
     {
         position: absolute;
-        top: -15px;
-        right: 25px;
+        top: -8px;
+        right: 0px;
 
         display: block;
 
@@ -185,22 +186,21 @@
     }
 
 
-    .posts .post:nth-child(1) {
+    .posts.home .post:nth-child(1) {
         flex-direction: column;
     }
-    .posts .post:nth-child(1) img {
-        width: 100%;
-        height: auto;
-    }
-    .posts .post:nth-child(1) .thumb {
+    .posts.home .post:nth-child(1) img {
         width: 100%;
     }
-    .posts .post:nth-child(1) .info {
+    .posts.home .post:nth-child(1) .thumb {
+        width: 100%;
+    }
+    .posts.home .post:nth-child(1) .info {
         max-width: 100%;
         margin-top: 0px;
         margin-right: 0;
     }
-    .posts .post:nth-child(1) .name {
+    .posts.home .post:nth-child(1) .name {
         max-width: 100%;
     }
     .footer_items {
@@ -238,17 +238,7 @@
         font-size: 22px;
         margin-top: 15px;
     }
-    .posts .post:nth-child(4) {
-        width: calc(50% - 32px);
-        margin-bottom: 58px;
-        margin-left: 32px;
-    }
-    .posts .post:nth-child(5) {
-        width: calc(50% - 32px);
-        margin-bottom: 58px;
-        margin-left: 32px;
-    }
-    .posts .post:nth-child(6) {
+    .posts .post {
         width: calc(50% - 32px);
         margin-bottom: 58px;
         margin-left: 32px;

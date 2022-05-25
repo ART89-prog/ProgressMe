@@ -94,26 +94,19 @@
 
 @media (max-width: 580px) {
  
-    .posts .post:nth-child(2) {
+    .posts.home .post:nth-child(2) {
         width: 100%;
         margin-bottom: 35px;
     }
-    .posts .post:nth-child(3) {
+    .posts.home .post:nth-child(3) {
         width: 100%;
         margin-bottom: 35px;
     }
-    .posts .post:nth-child(4) {
+    .posts .post {
         width: 100%;
         margin-bottom: 35px;
     }
-    .posts .post:nth-child(5) {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-    .posts .post:nth-child(6) {
-        width: 100%;
-        margin-bottom: 35px;
-    }
+ 
     .mob_header .logo img {
         width: 140px;
     }

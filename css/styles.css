@@ -459,7 +459,7 @@ header .menu .item:hover .sub_link::before {
     transform: rotate(-45deg);
     border-top: 2px solid #fff;
     border-right: 2px solid #fff;
-    top: -1px;
+    top: -2px;
 }
 header .menu .sub_menu
 {
@@ -810,55 +810,44 @@ header .search .submit_btn
     display: block;
     margin-right: 5px;
 }
-.posts .post:nth-child(1) {
+.posts.home .post:nth-child(1) {
     width: 100%;
     margin-bottom: 58px;
     margin-left: 32px;
 }
-.posts .post:nth-child(2) {
+.posts.home .post:nth-child(2) {
     width: calc(50% - 32px);
     margin-bottom: 58px;
     margin-left: 32px;
 }
-.posts .post:nth-child(3) {
+.posts.home .post:nth-child(3) {
     width: calc(50% - 32px);
     margin-bottom: 58px;
     margin-left: 32px;
 }
-.posts .post:nth-child(4) {
+.posts .post {
     width: calc(33.333% - 32px);
     margin-bottom: 58px;
     margin-left: 32px;
 }
-.posts .post:nth-child(5) {
-    width: calc(33.333% - 32px);
-    margin-bottom: 58px;
-    margin-left: 32px;
-}
-.posts .post:nth-child(6) {
-    width: calc(33.333% - 32px);
-    margin-bottom: 58px;
-    margin-left: 32px;
-}
-
-.posts .post:nth-child(1) {
+.posts.home .post:nth-child(1) {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
 }
-.posts .post:nth-child(1) .info {
+.posts.home .post:nth-child(1) .info {
     max-width: 360px;
     width: 100%;
     margin-right: 32px;
 }
-.posts .post:nth-child(1) .thumb {
+.posts.home .post:nth-child(1) .thumb {
     width: 50%;
 }
-.posts .post:nth-child(1) .thumb > a {
+.posts.home .post:nth-child(1) .thumb > a {
     padding-bottom: 100%;
 }
-.posts .post:nth-child(1) .name a {
+.posts.home .post:nth-child(1) .name a {
     font-family: var(--font_family);
     font-weight: 600;
     font-size: 35px;
@@ -868,7 +857,7 @@ header .search .submit_btn
     max-width: 343px;
     margin-bottom: 11px;
 }
-.posts .post:nth-child(1) .desc {
+.posts.home .post:nth-child(1) .desc {
     font-family: var(--font_family);
     font-weight: 400;
     font-size: var(--font_size);
