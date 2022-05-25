@@ -184,9 +184,19 @@
         font-size: 22px;
         margin-top: 15px;
     }
-    .posts .row.posts_bottom > * {
+    .posts .post:nth-child(3) {
         width: calc(50% - 32px);
-        margin-bottom: 32px;
+        margin-bottom: 58px;
+        margin-left: 32px;
+    }
+    .posts .post:nth-child(4) {
+        width: calc(50% - 32px);
+        margin-bottom: 58;
+        margin-left: 32px;
+    }
+    .posts .post:nth-child(5) {
+        width: calc(50% - 32px);
+        margin-bottom: 58px;
         margin-left: 32px;
     }
     .posts {

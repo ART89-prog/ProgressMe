@@ -27,6 +27,7 @@
 		<!-- Подключение шрифтов с гугла -->
 
 		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/fancybox.css">
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/response_1179.css">
 		<link rel="stylesheet" href="css/response_1023.css">
@@ -40,7 +41,7 @@
 				<header>
 					<div class="cont row">
 						<a href="#" class="logo">
-							<img src="images/logo.png" alt="">
+							<img src="images/logo.svg" alt="">
 						</a>
 						<nav class="menu row">
 							<div class="item">
@@ -56,18 +57,30 @@
 							<div class="item">
 								<a href="/" class="sub_link">
 									<span>Как учить</span>
-								</a>
+								</a>								
 								<div class="sub_menu">
 									<a href="/">для школ</a>
 									<a href="/">для учителей</a>
 									<a href="/">для авторов</a>
-								</div>
+								</div>						
 							</div>									
 						</nav>
 							
-						<button type="submit" class="search">
-							<img src="images/search.png" alt="">
-						</button>
+						<div class="search modal_cont">
+							<button class="btn mini_modal_btn" data-modal-id="#search_modal">
+								<img src="images/search.png" alt="">
+							</button>
+
+							<div class="mini_modal" id="search_modal">
+								<form role="search" method="get" id="searchform" action="">
+									<input type="text" name="s" value="" class="input" placeholder="">
+
+									<button type="submit" class="submit_btn">
+										<img src="images/search.png" alt="">
+									</button>
+								</form>
+							</div>
+						</div>
 
 					</div>
 				</header>
@@ -78,7 +91,7 @@
 				<section class="mob_header">
 					<div class="cont">
 						<a href="#" class="logo">
-							<img src="images/logo.png" alt="">
+							<img src="images/logo.svg" alt="">
 						</a>
 						<button class="mob_menu_btn">
 							<span></span>
@@ -98,7 +111,7 @@
 							</div>
 						</div>
 						<div class="first_section-img">
-							<img src="images/first_section-img.png" alt="">
+							<img data-src="images/first_section-img.png" alt="" class="lozad">
 						</div>
 					</div>
 				</section>
@@ -106,7 +119,7 @@
 
 				<section class="posts">
 					<div class="cont">
-						<div class="row posts_top">
+						<div class="row">
 							<div class="post">
 								<div class="thumb">
 									<a href="/">
@@ -114,10 +127,10 @@
 									</a>
 								</div>
 								<div class="info">
-									<div class="name" style="height: auto;">
+									<div class="name">
 										<a href="/">Education pinion view engaged</a>
 									</div>
-									<div class="desc" style="height: auto;">Educat linkion resources repair strictly brother. Secure formal hearted direct mother hunted innate shewing cannot</div>
+									<div class="desc">Educat linkion resources repair strictly brother. Secure formal hearted direct mother hunted innate shewing cannot</div>
 									<div class="cat link">
 										<a href="/">Опыт</a>
 									</div>
@@ -130,19 +143,17 @@
 									</a>
 								</div>
 								<div class="info">
-									<div class="name" style="height: auto;">
+									<div class="name">
 										<a href="/">Education pinion view engaged</a>
 									</div>
-									<div class="desc" style="height: auto;">Educat linkion resources repair strictly brother. Secure formal hearted direct mother hunted innate shewing cannot</div>
+									<div class="desc">Educat linkion resources repair strictly brother. Secure formal hearted direct mother hunted innate shewing cannot</div>
 									<div class="cat link">
 										<a href="/">Как учить</a>
 										<a href="/">На волне</a>
 									</div>
 								</div>
 							</div>
-						</div>
-
-						<div class="row posts_bottom">
+						
 							<div class="post">
 								<div class="thumb">
 									<a href="/">
@@ -150,10 +161,10 @@
 									</a>
 								</div>
 								<div class="info">
-									<div class="name" style="height: auto;">
+									<div class="name">
 										<a href="/">Education pinion view engaged</a>
 									</div>
-									<div class="desc" style="height: auto;">Education resources repair strictly brother. Secure formal hearted direct mother hunted innate shewing cannot</div>
+									<div class="desc">Education resources repair strictly brother. Secure formal hearted direct mother hunted innate shewing cannot</div>
 									<div class="cat link">
 										<a href="/">Решения</a>
 									</div>
@@ -166,10 +177,10 @@
 									</a>
 								</div>
 								<div class="info">
-									<div class="name" style="height: auto;">
+									<div class="name">
 										<a href="/">Education pinion view engaged</a>
 									</div>
-									<div class="desc" style="height: auto;">Education resources repair strictly brother. Secure formal hearted direct mother hunted innate shewing cannot</div>
+									<div class="desc">Education resources repair strictly brother. Secure formal hearted direct mother hunted innate shewing cannot</div>
 									<div class="cat link">
 										<a href="/">Опыт</a>
 									</div>
@@ -182,18 +193,24 @@
 									</a>
 								</div>
 								<div class="info">
-									<div class="name" style="height: auto;">
+									<div class="name">
 										<a href="/">Education pinion view engaged</a>
 									</div>
-									<div class="desc" style="height: auto;">Education resources repair strictly brother. Secure formal hearted direct mother hunted innate shewing cannot</div>
+									<div class="desc">Education resources repair strictly brother. Secure formal hearted direct mother hunted innate shewing cannot</div>
 									<div class="cat link">
 										<a href="/">Решения</a>
 										<a href="/">На волне</a>
 									</div>
 								</div>
-							</div>
-						</div>		
+							</div>	
+						</div>
+													
 						
+						<div class="more-btn">
+							<a class="toggle" href="#">
+								<span>Показать ещё</span>
+							</a>	
+						</div>						
 					</div>
 				</section>
 
@@ -203,7 +220,7 @@
 						<div class="subscribe_wrap">
 							<div class="subscribe_text">Подпишитесь на полезную рассылку ProgressMe!</div>
 							<div class="subscribe_link">
-								<a href="#">
+								<a href="#" class="modal_link" data-content="#callback_modal">
 									<span>Enter your email</span> 
 									<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M10 1L17 8L10 14.5" stroke-width="2"/>
@@ -212,104 +229,7 @@
 								</a>
 							</div>	
 						</div>
-						<div class="more-btn">
-							<a class="toggle" href="#">
-								<span>Показать ещё</span>
-							</a>	
-						</div>
-						<section class="posts" style="display: none;">
-							<div class="cont">
-								<div class="row posts_top">
-									<div class="post">
-										<div class="thumb">
-											<a href="/">
-												<img data-src="images/post_thumb.jpg" alt="" class="lozad">
-											</a>
-										</div>
-										<div class="info">
-											<div class="name" style="height: auto;">
-												<a href="/">Education pinion view engaged</a>
-											</div>
-											<div class="desc" style="height: auto;">Educat linkion resources repair strictly brother. Secure formal hearted direct mother hunted innate shewing cannot</div>
-											<div class="cat link">
-												<a href="/">Опыт</a>
-											</div>
-										</div>
-									</div>							
-									<div class="post">
-										<div class="thumb">
-											<a href="/">
-												<img data-src="images/post_thumb.jpg" alt="" class="lozad">
-											</a>
-										</div>
-										<div class="info">
-											<div class="name" style="height: auto;">
-												<a href="/">Education pinion view engaged</a>
-											</div>
-											<div class="desc" style="height: auto;">Educat linkion resources repair strictly brother. Secure formal hearted direct mother hunted innate shewing cannot</div>
-											<div class="cat link">
-												<a href="/">Как учить</a>
-												<a href="/">На волне</a>
-											</div>
-										</div>
-									</div>
-								</div>
-		
-								<div class="row posts_bottom">
-									<div class="post">
-										<div class="thumb">
-											<a href="/">
-												<img data-src="images/post_thumb.jpg" alt="" class="lozad">
-											</a>
-										</div>
-										<div class="info">
-											<div class="name" style="height: auto;">
-												<a href="/">Education pinion view engaged</a>
-											</div>
-											<div class="desc" style="height: auto;">Education resources repair strictly brother. Secure formal hearted direct mother hunted innate shewing cannot</div>
-											<div class="cat link">
-												<a href="/">Решения</a>
-											</div>
-										</div>
-									</div>							
-									<div class="post">
-										<div class="thumb">
-											<a href="/">
-												<img data-src="images/post_thumb.jpg" alt="" class="lozad">
-											</a>
-										</div>
-										<div class="info">
-											<div class="name" style="height: auto;">
-												<a href="/">Education pinion view engaged</a>
-											</div>
-											<div class="desc" style="height: auto;">Education resources repair strictly brother. Secure formal hearted direct mother hunted innate shewing cannot</div>
-											<div class="cat link">
-												<a href="/">Опыт</a>
-											</div>
-										</div>
-									</div>						
-									<div class="post">
-										<div class="thumb">
-											<a href="/">
-												<img data-src="images/post_thumb.jpg" alt="" class="lozad">
-											</a>
-										</div>
-										<div class="info">
-											<div class="name" style="height: auto;">
-												<a href="/">Education pinion view engaged</a>
-											</div>
-											<div class="desc" style="height: auto;">Education resources repair strictly brother. Secure formal hearted direct mother hunted innate shewing cannot</div>
-											<div class="cat link">
-												<a href="/">Решения</a>
-												<a href="/">На волне</a>
-											</div>
-										</div>
-									</div>
-								</div>		
-								
-							</div>
-						</section>
-					
+										
 					</div>
 				</section>
 
@@ -358,7 +278,7 @@
 							</div>
 						</div>
 						<a href="#" class="logo">
-							<img src="images/logo.png" alt="">
+							<img data-src="images/logo.svg" alt="" class="lozad">
 						</a>
 					</div>
 				</footer>
@@ -380,8 +300,30 @@
 		</div>
 
 
+
+		<section class="modal" id="callback_modal" style="display: none;">
+            <div class="modal_title">Подпишитесь на полезную рассылку ProgressMe!</div>            
+            <form action="" class="form">
+                <div class="line">
+                    <div class="field">
+						<label for="email">Email<span>&#9913;</span></label>
+                        <input type="text" id="email" name="email" value="" class="input required" placeholder="someone@example.com">
+                    </div>
+                    <div class="field">
+						<label for="name">Имя</label>
+                        <input type="text" name="name" value="" class="input" placeholder="Ivan Ivanov">
+                    </div> 
+                    <button type="submit" class="modal_btn">
+                        <span>Подписаться</span>
+                    </button>
+                </div>             
+            </form>            
+        </section>
+
+
 		<!-- Подключение javascript файлов -->
 		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/fancybox.min.js"></script>
 		<script src="js/lozad.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>

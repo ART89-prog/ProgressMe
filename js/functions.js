@@ -21,28 +21,57 @@ $(() => {
 
 
 
-	// Аккордион
-	$('body').on('click', '.footer_item-title', function (e) {
+	$('.mini_modal_btn').click(function (e) {
 		e.preventDefault()
 
-		const $item = $(this).closest('.footer_item'),
-			$accordion = $(this).closest('.footer_items')
+		const modalId = $(this).data('modal-id')
 
-		if ($item.hasClass('active')) {
-			$item.removeClass('active').find('.footer_item ul').slideUp(300)
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active')
+			$('.mini_modal').removeClass('active')
+
+			if (is_touch_device()) $('body').css('cursor', 'default')
 		} else {
-			$accordion.find('.footer_item').removeClass('active')
-			$accordion.find('.footer_item ul').slideUp(300)
+			$('.mini_modal_btn').removeClass('active')
+			$(this).addClass('active')
 
-			$item.addClass('active').find('.footer_item ul').slideDown(300)
+			$('.mini_modal').removeClass('active')
+			$(modalId).addClass('active')
+
+			if (is_touch_device()) $('body').css('cursor', 'pointer')
+		}
+	})
+
+	$(document).click((e) => {
+		if ($(e.target).closest('.modal_cont').length === 0) {
+			$('.mini_modal, .mini_modal_btn').removeClass('active')
+
+			if (is_touch_device()) $('body').css('cursor', 'default')
 		}
 	})
 
 
-	$('.more-btn a.toggle').click(function(e) {
-		e.preventDefault();
-		$('.posts').css('display', 'block');
-    });
+
+
+	// $('.more-btn a.toggle').click(function(e) {
+	// 	e.preventDefault();
+	// 	$('.posts').css('display', 'block');
+    // });
+
+
+	$('body').on('click', '.modal_link', function (e) {
+		e.preventDefault()
+	
+		$.fancybox.close(true)
+	
+		$.fancybox.open({
+			src: $(this).data('content'),
+			type: 'inline',
+			touch: false
+		})
+	})
+
+
 
 
 

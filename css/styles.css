@@ -186,12 +186,12 @@ html.custom_scroll ::-webkit-scrollbar
 
 html.custom_scroll ::-webkit-scrollbar-thumb
 {
-    background-color: #55ac00;
+    background-color: #32CDFE;
 }
 
 html.custom_scroll
 {
-    scrollbar-color: #55ac00 #ccc;
+    scrollbar-color: #32CDFE #ccc;
     scrollbar-width: thin;
 }
 
@@ -352,22 +352,22 @@ header
 
     width: 100%;
     margin-top: 29px;
+    margin-bottom: 55px;
 }
 header .cont {
-    max-width: 1486px;
-    margin-left: 76px;
-    display: flex;
+    position: relative;
     align-items: center;
 }
 header .logo {
     margin-right: 40px;
+    position: absolute;
+    left: -250px;
 }
 
 
 header .menu 
 {
     align-items: center;
-    margin-top: 32px;
 }
 
 
@@ -376,7 +376,6 @@ header .menu
 header .menu .item
 {
     position: relative;
-    padding-bottom: 32px;
 
 }
 header .menu .item .sub_link {
@@ -415,7 +414,7 @@ header .menu > .item > a
 
     display: flex;
     position: relative;
-
+    transition: all .4s;
 
     text-decoration: none;
 
@@ -463,7 +462,8 @@ header .menu .sub_menu
     background: #FFFFFF;
     border-radius: 15px;
     box-shadow: 0px 1px 21px rgba(159, 166, 171, 0.2);
-}
+} 
+
 
 
 header .menu .item:hover > a.touch_link + .sub_menu
@@ -528,10 +528,132 @@ header .menu .sub_menu .current-menu-item a:before
 
 header .search {
     margin-left: auto;
+    margin-right: 12px;
 }
 header .search img {
     width: 35px;
     height: 35px;
+}
+
+
+header .search .btn
+{
+    display: flex;
+
+    width: 35px;
+    height: 35px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+header .search .mini_modal
+{
+    top: -7px;
+    right: -13px;
+    left: auto;
+
+    width: 416px;
+}
+
+
+header .search form
+{
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+header .search ::-webkit-input-placeholder
+{
+    color: #000;
+}
+
+header .search :-moz-placeholder
+{
+    color: #000;
+}
+
+header .search :-ms-input-placeholder
+{
+    color: #000;
+}
+
+
+header .search .input
+{
+    color: var(--text_color);
+    font-family: var(--font_family);
+    font-size: var(--font_size);
+
+    display: block;
+
+    width: 100%;
+    height: 48px;
+    padding: 0 48px 0 15px;
+
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    background: #eee;
+}
+
+
+header .search .submit_btn
+{
+    display: flex;
+
+    width: 35px;
+    height: 35px;
+    margin-left: -48px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+/*----------------
+    Mini modal
+----------------*/
+.modal_cont
+{
+    position: relative;
+}
+
+
+.mini_modal
+{
+    position: absolute;
+    z-index: 100;
+    top: calc(100% + 30px);
+    left: 0;
+
+    visibility: hidden;
+
+    transition: .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.mini_modal.active
+{
+    top: 100%;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
 }
 
 
@@ -621,7 +743,6 @@ header .search img {
 
 /* first_section */
 .first_section {
-    margin-top: 55px;
     margin-bottom: 56px;
 }
 .first_section .cont {
@@ -651,11 +772,11 @@ header .search img {
     color: #1F3443;
     margin-bottom: 21px;
 }
-.link {
+.first_section .link {
     display: flex;
     align-items: center;
 }
-.link a {
+.first_section .link a {
     text-decoration: none;
     font-family: 'Mont';
     font-weight: 600;
@@ -667,8 +788,6 @@ header .search img {
     border-radius: 40px;
     padding: 3px 12px;
     display: block;
-}
-.link a:first-child {
     margin-right: 5px;
 }
 .first_section-img {
@@ -686,24 +805,10 @@ header .search img {
 .posts  {
     margin-bottom: 84px;
 }
-.posts .row.posts_top,
-.posts .row.posts_bottom {
+.posts .row {
     margin-left: -32px;
-    display: flex;
 }
-.posts .posts_top {
-    margin-bottom: 24px;
-}
-.posts .row.posts_top > * {
-    width: calc(50% - 32px);
-    margin-bottom: 32px;
-    margin-left: 32px;
-}
-.posts .row.posts_bottom > * {
-    width: calc(33.333% - 32px);
-    margin-bottom: 32px;
-    margin-left: 32px;
-}
+
 .posts .post .thumb
 {
     position: relative;
@@ -719,6 +824,49 @@ header .search img {
     padding-bottom: 56.29%;
 
     background: #ddd;
+}
+.post .link {
+    display: flex;
+    align-items: center;
+}
+.post .link a {
+    text-decoration: none;
+    font-family: 'Mont';
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: -0.07em;
+    color: #1F3443;
+    border: 2px solid #1F3443;
+    border-radius: 40px;
+    padding: 3px 12px;
+    display: block;
+    margin-right: 5px;
+}
+.posts .post:nth-child(1) {
+    width: calc(50% - 32px);
+    margin-bottom: 58px;
+    margin-left: 32px;
+}
+.posts .post:nth-child(2) {
+    width: calc(50% - 32px);
+    margin-bottom: 58px;
+    margin-left: 32px;
+}
+.posts .post:nth-child(3) {
+    width: calc(33.333% - 32px);
+    margin-bottom: 58px;
+    margin-left: 32px;
+}
+.posts .post:nth-child(4) {
+    width: calc(33.333% - 32px);
+    margin-bottom: 58;
+    margin-left: 32px;
+}
+.posts .post:nth-child(5) {
+    width: calc(33.333% - 32px);
+    margin-bottom: 58px;
+    margin-left: 32px;
 }
 
 
@@ -882,4 +1030,110 @@ footer {
 
 
 
+
+.modal {
+    max-width: 100%;
+    width: 1174px;
+    background: linear-gradient(63.3deg, #008CF0 30.51%, #1598F5 95.55%);
+    padding: 77px 71px 71px;
+}
+.modal_title {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 121.5%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    max-width: 676px;
+    width: 100%;
+    margin: 0 auto 7px;
+}
+.modal .form {
+    max-width: 371px;
+    width: 100%;
+    margin: 0 auto;
+}
+.line {
+}
+.modal .form .field {
+    display: flex;
+    flex-direction: column;
+}
+.modal .form .field label {
+    margin-left: 5px;
+    font-family: 'Mont';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 144.5%;
+    letter-spacing: -0.02em;
+    color: #E8E8E9;
+    display: flex;
+}
+.modal .form .input {
+    border: 2px solid #E8E8E9;
+    border-radius: 5px;
+    height: 52px;
+    background: transparent;
+    color: rgba(232, 232, 233, 1);
+    font-family: 'Mont';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 144.5%;
+    letter-spacing: -0.02em;
+    padding: 0 11px;
+}
+
+.modal .form .input::-webkit-input-placeholder {
+    color: rgba(232, 232, 233, 1);
+    font-family: 'Mont';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 144.5%;
+    letter-spacing: -0.02em;
+}
+.modal .form .input::-moz-placeholder {
+    color: rgba(232, 232, 233, 1);
+    font-family: 'Mont';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 144.5%;
+    letter-spacing: -0.02em;
+}
+.modal .form .input:-moz-placeholder {
+    color: rgba(232, 232, 233, 1);
+    font-family: 'Mont';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 144.5%;
+    letter-spacing: -0.02em;
+}
+.modal .form .input:-ms-input-placeholder {
+    color: rgba(232, 232, 233, 1);
+    font-family: 'Mont';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 144.5%;
+    letter-spacing: -0.02em;
+}
+
+.modal_btn {
+    font-family: 'Mont';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 144.5%;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+    background: linear-gradient(262.23deg, #32CDFE 24.68%, #32CCFE 56.01%);
+    box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 100%;
+    height: 51px;
+    margin-top: 24px;
+}
+.fancybox-slide--html .fancybox-close-small {
+    padding: 6px;
+    color: #fff;
+}
 

@@ -1,8 +1,8 @@
-@media (max-width: 1562px) {
+@media (max-width: 1740px) {
   
-    header .cont {
-        max-width: 1216px;
-        margin: 0 auto;
+    header .logo {
+        position: relative;
+        left: 0;
     }
    
    

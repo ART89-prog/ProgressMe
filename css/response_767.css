@@ -29,7 +29,7 @@
         font-size: 28px;
     }
     .subscribe_wrap {
-        padding: 47px 26px 31px;
+        padding: 47px 7px 31px;
     }
     .first_section .info {
         margin-top: 20px;
@@ -41,12 +41,21 @@
 
 
 @media (max-width: 580px) {
-    .posts .row.posts_top > * {
+    .posts .post:nth-child(1) {
         width: 100%;
     }
-    .posts .row.posts_bottom > * {
+    .posts .post:nth-child(2) {
         width: 100%;
-    } 
+    }
+    .posts .post:nth-child(3) {
+        width: 100%;
+    }
+    .posts .post:nth-child(4) {
+        width: 100%;
+    }
+    .posts .post:nth-child(5) {
+        width: 100%;
+    }
     .mob_header .logo img {
         width: 140px;
     }
