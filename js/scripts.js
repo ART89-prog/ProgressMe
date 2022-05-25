@@ -1,8 +1,8 @@
 // Моб. меню
-$('.mob_header .mob_menu_btn').click((e) => {
+$('.mob_menu_btn').click((e) => {
 	e.preventDefault()
 
-	$('.mob_header .mob_menu_btn').addClass('active')
+	$('.mob_menu_btn').addClass('active')
 	$('body').addClass('menu_open')
 	$('header').addClass('show')
 	$('.overlay').fadeIn(300)
@@ -12,7 +12,7 @@ $('.mob_header .mob_menu_btn').click((e) => {
 $('header > .close, .overlay').click((e) => {
 	e.preventDefault()
 
-	$('.mob_header .mob_menu_btn').removeClass('active')
+	$('.mob_menu_btn').removeClass('active')
 	$('body').removeClass('menu_open')
 	$('header').removeClass('show')
 	$('.overlay').fadeOut(300)

@@ -1,12 +1,16 @@
-@media (max-width: 1023px)
-{
+@media (max-width: 1023px) {
 
-    .mob_header
+   .mob_header
     {
         display: block;
         margin-top: 30px;
     }
+    .mob_menu_btn {
+        display: block;
 
+    } 
+
+ 
 
     header
     {
@@ -26,6 +30,7 @@
         transform: translateX(-100%);
 
         background: #fff;
+        display: block;
     }
  
 
@@ -33,6 +38,8 @@
     {
         transform: translateX(0);
     }
+
+
     header .search {
         display: none;
     }
@@ -68,10 +75,6 @@
         background: none;
     }
 
-    header .menu .mob_title
-    {
-        display: block;
-    }
 
     header .menu .item > a
     {
@@ -114,23 +117,31 @@
         position: relative;
         top: 0;
         left: 0;
-
         display: none;
         visibility: hidden;
-
         width: 100%;
         margin-top: 8px;
         margin-bottom: 8px;
-        padding: 20px;
-
+        padding: 0;
         pointer-events: auto;
-
         opacity: 1;
         border: none;
         border-radius: 3px;
-        background: #f2f0e3;
+        background: none;
+       
     }
-
+    header .menu .item .sub_menu a {
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: capitalize; 
+        padding-top: 19px;
+    }
+    header .menu .sub_menu::before {
+        display: none;
+    }
+    header .menu .sub_menu::after {
+        display: none;
+    }
     header .menu .item > a.touch_link + .sub_menu.show
     {
         display: block;
@@ -176,7 +187,7 @@
         border-top: 1px solid #000000 !important;
         border-right: 1px solid #000000 !important;
         right: calc(100% - 150px);
-        top: -3px;
+        top: -7px;
     }
     .posts .post:nth-child(1) {
         margin-top: 30px;
