@@ -3,7 +3,8 @@
    .mob_header
     {
         display: block;
-        margin-top: 30px;        
+        margin-top: 30px;  
+        margin-bottom: 50px;      
     }
     .mob_menu_btn {
         display: block;
@@ -226,11 +227,10 @@
         right: calc(100% - 150px);
         top: -16px;
     }
-    .posts .post:nth-child(1) {
-        margin-top: 30px;
+    .posts.home .post:nth-child(1) {
         margin-bottom: 30px;
     }
-    .posts .post:nth-child(1) .name a {
+    .posts.home .post:nth-child(1) .name a {
         font-size: 28px;
         max-width: 100%;
     }
