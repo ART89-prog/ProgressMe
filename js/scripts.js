@@ -9,7 +9,7 @@ $('.mob_menu_btn').click((e) => {
 })
 
 
-$('header > .close, .overlay').click((e) => {
+$('header .close, .overlay').click((e) => {
 	e.preventDefault()
 
 	$('.mob_menu_btn').removeClass('active')

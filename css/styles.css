@@ -721,7 +721,7 @@ header .search .submit_btn
 {
     z-index: 102;
 
-    display: flex;
+    display: none;
 
     width: 46px;
     height: 34px;

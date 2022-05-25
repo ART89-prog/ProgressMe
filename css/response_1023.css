@@ -3,12 +3,12 @@
    .mob_header
     {
         display: block;
-        margin-top: 30px;
+        margin-top: 30px;        
     }
     .mob_menu_btn {
         display: block;
-
-    } 
+        z-index: 98;
+    }
 
  
 
@@ -77,14 +77,11 @@
 
 
     header .menu .item > a
-    {
-        
+    {        
         font-size: 15px;
         line-height: 18px;
-
         min-height: 0;
-        padding: 8px 0;
-
+        padding-left: 0;
         text-align: left;
 
         justify-content: flex-start;
@@ -120,8 +117,6 @@
         display: none;
         visibility: hidden;
         width: 100%;
-        margin-top: 8px;
-        margin-bottom: 8px;
         padding: 0;
         pointer-events: auto;
         opacity: 1;
@@ -134,7 +129,10 @@
         font-size: 15px;
         font-weight: 600;
         text-transform: capitalize; 
-        padding-top: 19px;
+        padding-top: 20px;
+        padding-bottom: 20px; 
+        margin-top: 0;  
+        border-top: 1px solid #EFEFEF;     
     }
     header .menu .sub_menu::before {
         display: none;
@@ -146,6 +144,44 @@
     {
         display: block;
         visibility: visible;
+        margin-top: 0;
+    }
+    header .menu .item .sub_link {
+        padding-bottom: 20px;
+    }
+
+    header .close
+    {
+        position: absolute;
+        top: -15px;
+        right: 25px;
+
+        display: block;
+
+        width: 50px;
+        height: 50px;
+    }
+
+    header .close:before,
+    header .close:after
+    {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 60%;
+        height: 2px;
+        margin: auto;
+        content: '';
+        transform: rotate(45deg);
+        background: #1F3443;
+    }
+
+    header .close:after
+    {
+        transform: rotate(-45deg);
     }
 
 
@@ -179,7 +215,8 @@
         color: #000;
     }
     header .menu .item {
-        padding-bottom: 19px;
+       padding: 20px 0;
+       border-top: 1px solid #EFEFEF;
     }
     header .menu .item .sub_link::before {
         width: 8px;
@@ -187,7 +224,7 @@
         border-top: 1px solid #000000 !important;
         border-right: 1px solid #000000 !important;
         right: calc(100% - 150px);
-        top: -7px;
+        top: -16px;
     }
     .posts .post:nth-child(1) {
         margin-top: 30px;
