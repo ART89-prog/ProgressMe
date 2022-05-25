@@ -2,12 +2,14 @@
     
     .posts .link a {
         font-size: 12px;
+        line-height: 20px;
         border-radius: 40px;
         padding: 2px 12px;
     }
     .posts .info .desc {
         display: none;
     }
+    .posts .post:nth-child(1) .name a,
     .posts .info .name a {
         font-size: 20px;
         margin-top: 15px;

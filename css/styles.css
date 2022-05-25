@@ -365,7 +365,7 @@ header
 
     width: 100%;
     margin-top: 29px;
-    margin-bottom: 55px;
+    margin-bottom: 85px;
 }
 header .cont {
     position: relative;
@@ -453,11 +453,14 @@ header .menu .item .sub_link::before {
     border-right: 2px solid #000000 !important;
     margin: 18px 0 0 10px;
     display: inline-block;
-    transform: rotate(-45deg);
-    top: 0px;
+    transform: rotate(135deg);
+    top: -7px;
     right: 24px;
 }
-
+header .menu .item .sub_link:hover::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
 header .menu .sub_menu
 {
     position: absolute;
@@ -584,7 +587,7 @@ header .search .btn
 
 header .search .mini_modal
 {
-    top: -7px;
+    top: -6px;
     right: -13px;
     left: auto;
 
@@ -856,7 +859,10 @@ header .search .submit_btn
 .posts .post:nth-child(1) .thumb {
     width: 50%;
 }
-.posts .post:nth-child(1) .name {
+.posts .post:nth-child(1) .thumb > a {
+    padding-bottom: 100%;
+}
+.posts .post:nth-child(1) .name a {
     font-family: var(--font_family);
     font-weight: 600;
     font-size: 35px;
@@ -922,7 +928,7 @@ header .search .submit_btn
 /* SUBSCRIBE */
 
 .subscribe {
-    margin-bottom: 42px;
+    margin-bottom: 79px;
 }
 .subscribe_wrap {
     padding: 55px;
@@ -1032,8 +1038,8 @@ footer {
 .footer_item {
     margin-right: 15px;
 }
-.footer_item:last-child {
-    margin-right: 0px;
+footer .logo img {
+    width: 225px;
 }
 
 

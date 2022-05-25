@@ -21,6 +21,8 @@
     }
     footer .logo img {
         width: 140px;
+        margin: 0 auto;
+        display: block;
     }
     footer .logo img {
         text-align: center;
@@ -49,7 +51,7 @@
         padding-top: 16px;
         margin-right: 0;
         margin-bottom: 0;
-        padding-bottom: 18px;
+        padding-bottom: 6px;
     }
     .footer_item .footer_item-title {
         position: relative;
@@ -94,18 +96,23 @@
  
     .posts .post:nth-child(2) {
         width: 100%;
+        margin-bottom: 35px;
     }
     .posts .post:nth-child(3) {
         width: 100%;
+        margin-bottom: 35px;
     }
     .posts .post:nth-child(4) {
         width: 100%;
+        margin-bottom: 35px;
     }
     .posts .post:nth-child(5) {
         width: 100%;
+        margin-bottom: 35px;
     }
     .posts .post:nth-child(6) {
         width: 100%;
+        margin-bottom: 35px;
     }
     .mob_header .logo img {
         width: 140px;

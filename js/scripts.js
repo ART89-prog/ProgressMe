@@ -8,14 +8,14 @@ $('.mob_header .mob_menu_btn').click((e) => {
 	$('.overlay').fadeIn(300)
 })
 
-$('header > .close, .overlay').click((e) => {
-	e.preventDefault()
+// $('header > .close, .overlay').click((e) => {
+// 	e.preventDefault()
 
-	$('.mob_header .mob_menu_btn').removeClass('active')
-	$('body').removeClass('menu_open')
-	$('header').removeClass('show')
-	$('.overlay').fadeOut(300)
-})
+// 	$('.mob_header .mob_menu_btn').removeClass('active')
+// 	$('body').removeClass('menu_open')
+// 	$('header').removeClass('show')
+// 	$('.overlay').fadeOut(300)
+// })
 
 
 if (is_touch_device()) {
