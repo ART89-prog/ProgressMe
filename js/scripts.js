@@ -1,3 +1,5 @@
+$(() => {
+
 // Моб. меню
 $('.mob_menu_btn').click((e) => {
 	e.preventDefault()
@@ -64,18 +66,12 @@ if (is_touch_device()) {
 		}
 	})
 
-
-
-
-
-
-
-
-
-
-
-	
-
 }
+
+})
+
+
+
+
 
 

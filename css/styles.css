@@ -386,7 +386,17 @@ header .menu
 }
 
 
-
+body.menu_open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    min-height: -moz-available;
+    min-height: -webkit-fill-available;
+    min-height: fill-available;
+}
 
 header .menu .item
 {
@@ -397,19 +407,7 @@ header .menu .item .sub_link {
     position: relative;
     padding-right: 53px;
 }
-header .menu .item .sub_link::before {
-    position: absolute;
-    content: "";
-    width: 11px;
-    height: 11px;
-    border-top: 2px solid #000000 !important;
-    border-right: 2px solid #000000 !important;
-    margin: 16px 0 0 10px;
-    display: inline-block;
-    transform: rotate(-45deg);
-    top: 0px;
-    right: 24px;
-}
+
 
 
 header .menu > .item > a
@@ -439,7 +437,7 @@ header .menu > .item > a
     flex-wrap: wrap;
 }
 
-header .menu > .item > a:hover {
+header .menu > .item:hover > a {
     background: var(--text_color);
     color: #FFFFFF;
 }
@@ -449,17 +447,19 @@ header .menu .item .sub_link::before {
     content: "";
     width: 11px;
     height: 11px;
-    border-top: 2px solid #000000 !important;
-    border-right: 2px solid #000000 !important;
+    border-top: 2px solid var(--text_color);
+    border-right: 2px solid var(--text_color);
     margin: 18px 0 0 10px;
     display: inline-block;
     transform: rotate(135deg);
     top: -7px;
     right: 24px;
 }
-header .menu .item .sub_link:hover::before {
+header .menu .item:hover .sub_link::before {
     transform: rotate(-45deg);
-    top: 0;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    top: -1px;
 }
 header .menu .sub_menu
 {
@@ -522,10 +522,6 @@ header .menu .item > a.touch_link + .sub_menu.show
     opacity: 1;
 }
 
-header .menu > .item > a:hover::before {
-    border-top: 2px solid #fff !important;
-    border-right: 2px solid #fff !important;
-}
 
 header .menu .sub_menu > * + *
 {
@@ -1047,6 +1043,7 @@ footer .logo img {
 /* Модальное окно */
 
 .modal {
+    display: none;
     max-width: 100%;
     width: 1174px;
     background: linear-gradient(63.3deg, #008CF0 30.51%, #1598F5 95.55%);
