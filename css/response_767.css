@@ -41,9 +41,7 @@
 
 
 @media (max-width: 580px) {
-    .posts .post:nth-child(1) {
-        width: 100%;
-    }
+ 
     .posts .post:nth-child(2) {
         width: 100%;
     }
@@ -54,6 +52,9 @@
         width: 100%;
     }
     .posts .post:nth-child(5) {
+        width: 100%;
+    }
+    .posts .post:nth-child(6) {
         width: 100%;
     }
     .mob_header .logo img {
