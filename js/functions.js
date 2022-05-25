@@ -52,13 +52,6 @@ $(() => {
 
 
 
-
-	// $('.more-btn a.toggle').click(function(e) {
-	// 	e.preventDefault();
-	// 	$('.posts').css('display', 'block');
-    // });
-
-
 	$('body').on('click', '.modal_link', function (e) {
 		e.preventDefault()
 	
@@ -70,9 +63,6 @@ $(() => {
 			touch: false
 		})
 	})
-
-
-
 
 
 	// Моб. версия

@@ -140,14 +140,14 @@ button
 {
     color: #fff;
 
-    background: #55ac00;
+    background: #32CDFE;
 }
 
 ::-moz-selection
 {
     color: #fff;
 
-    background: #55ac00;
+    background: #32CDFE;
 }
 
 
@@ -399,14 +399,14 @@ header .menu .item .sub_link::before {
 
 header .menu > .item > a
 {
-    font-family: 'Mont';
+    font-family: var(--font_family);
     font-weight: 600;
     font-size: 23px;
     line-height: 38px;
     letter-spacing: -0.04em;
-    color: #1F3443; 
+    color: var(--text_color); 
     background: #FFFFFF;
-    border: 2px solid #1F3443;
+    border: 2px solid var(--text_color);
     border-radius: 50px;
     padding: 0px 18px;
     position: relative;
@@ -425,7 +425,7 @@ header .menu > .item > a
 }
 
 header .menu > .item > a:hover {
-    background: #1F3443;
+    background: var(--text_color);
     color: #FFFFFF;
 }
 
@@ -499,13 +499,13 @@ header .menu .sub_menu > * + *
 
 header .menu .sub_menu a
 {
-    font-family: 'Mont';
+    font-family: var(--font_family);
     font-weight: 400;
     font-size: 22px;
     line-height: 125.5%;
     letter-spacing: -0.04em;
     
-    color: #1F3443;
+    color: var(--text_color); 
 
     position: relative;
 
@@ -596,7 +596,7 @@ header .search .input
 
     width: 100%;
     height: 48px;
-    padding: 0 48px 0 15px;
+    padding: 0 60px 0 15px;
 
     border: 1px solid #c4c4c4;
     border-radius: 8px;
@@ -706,7 +706,7 @@ header .search .submit_btn
     width: 100%;
     height: 2px;
     transition: background .2s linear;
-    background: #1F3443;
+    background: var(--text_color);
 }
 .mob_menu_btn span:before,
 .mob_menu_btn span:after {
@@ -718,7 +718,7 @@ header .search .submit_btn
     height: 100%;
     content: '';
     transition: .2s linear;
-    background: #1F3443;
+    background: var(--text_color);
 }
 .mob_menu_btn span:after{
     top: 8px;
@@ -754,7 +754,7 @@ header .search .submit_btn
     margin-top: 204px;
 }
 .first_section-title {
-    font-family: 'Mont';
+    font-family: var(--font_family);
     font-weight: 600;
     font-size: 35px;
     line-height: 125.5%;
@@ -764,12 +764,12 @@ header .search .submit_btn
     margin-bottom: 11px;
 }
 .first_section-desc {
-    font-family: 'Mont';
+    font-family: var(--font_family);
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--font_size);
     line-height: 153.5%;
     letter-spacing: -0.04em;
-    color: #1F3443;
+    color: var(--text_color); 
     margin-bottom: 21px;
 }
 .first_section .link {
@@ -778,13 +778,13 @@ header .search .submit_btn
 }
 .first_section .link a {
     text-decoration: none;
-    font-family: 'Mont';
+    font-family: var(--font_family);
     font-weight: 600;
-    font-size: 15px;
+    font-size: var(--font_size);
     line-height: 1;
     letter-spacing: -0.07em;
-    color: #1F3443;
-    border: 2px solid #1F3443;
+    color: var(--text_color); 
+    border: 2px solid var(--text_color);
     border-radius: 40px;
     padding: 3px 12px;
     display: block;
@@ -831,13 +831,13 @@ header .search .submit_btn
 }
 .post .link a {
     text-decoration: none;
-    font-family: 'Mont';
+    font-family: var(--font_family);
     font-weight: 600;
-    font-size: 15px;
+    font-size: var(--font_size);
     line-height: 1;
     letter-spacing: -0.07em;
-    color: #1F3443;
-    border: 2px solid #1F3443;
+    color: var(--text_color); 
+    border: 2px solid var(--text_color);
     border-radius: 40px;
     padding: 3px 12px;
     display: block;
@@ -886,21 +886,21 @@ header .search .submit_btn
 .posts .info .name a {
     display: block;
     text-decoration: none;
-    font-family: 'Mont';
+    font-family: var(--font_family);
     font-weight: 600;
-    font-size: 25px;
+    font-size: var(--font_size_title);
     line-height: 125.5%;
     letter-spacing: -0.04em;
-    color: #1F3443;
+    color: var(--text_color); 
     margin-top: 52px;
 }
 .posts .info .desc {
-    font-family: 'Mont';
+    font-family: var(--font_family);
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--font_size);
     line-height: 153.5%;
     letter-spacing: -0.04em;
-    color: #1F3443;
+    color: var(--text_color); 
     margin-top: 5px;
     margin-bottom: 18px;
 }
@@ -926,7 +926,7 @@ header .search .submit_btn
     text-align: center;
 }
 .subscribe_text {
-    font-family: 'Mont';
+    font-family: var(--font_family);
     font-weight: 700;
     font-size: 50px;
     line-height: 121.5%;
@@ -939,9 +939,9 @@ header .search .submit_btn
 }
 .subscribe_link a {
     text-decoration: none;
-    font-family: 'Mont';
+    font-family: var(--font_family);
     font-weight: 600;
-    font-size: 15px;
+    font-size: var(--font_size);
     line-height: 144.5%;
     letter-spacing: -0.04em;
     color: #EAEAEA;  
@@ -968,9 +968,9 @@ header .search .submit_btn
     background: linear-gradient(87.21deg, #32CCFE 12.39%, #32CDFD 156.47%);
     box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.1);
     border-radius: 7px;  
-    font-family: 'Mont';
+    font-family: var(--font_family);
     font-weight: 700;
-    font-size: 15px;
+    font-size: var(--font_size);
     line-height: 144.5%;
     letter-spacing: -0.04em;
     color: #FFFFFF;  
@@ -996,23 +996,23 @@ footer {
 .footer_item ul li a {
     text-decoration: none;
     list-style: none;
-    font-family: 'Mont';
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 153.5%;
     letter-spacing: -0.04em;
-    color: #1F3443;
+    color: var(--text_color); 
     margin-bottom: 6px;
     display: block;
 }
 .footer_item-title {
-    font-family: 'Mont';
+    font-family: var(--font_family);
     font-weight: 700;
     font-size: 18px;
     line-height: 153.5%;
     letter-spacing: -0.04em;
-    color: #1F3443;
+    color: var(--text_color); 
     margin-bottom: 5px;
 }
 .footer_item:last-child ul li {
@@ -1038,7 +1038,7 @@ footer {
     padding: 77px 71px 71px;
 }
 .modal_title {
-    font-family: 'Mont';
+    font-family: var(--font_family);
     font-style: normal;
     font-weight: 700;
     font-size: 50px;
@@ -1063,7 +1063,7 @@ footer {
 }
 .modal .form .field label {
     margin-left: 5px;
-    font-family: 'Mont';
+    font-family: var(--font_family);
     font-weight: 400;
     font-size: 20px;
     line-height: 144.5%;
@@ -1077,7 +1077,7 @@ footer {
     height: 52px;
     background: transparent;
     color: rgba(232, 232, 233, 1);
-    font-family: 'Mont';
+    font-family: var(--font_family);
     font-weight: 400;
     font-size: 20px;
     line-height: 144.5%;
@@ -1087,7 +1087,7 @@ footer {
 
 .modal .form .input::-webkit-input-placeholder {
     color: rgba(232, 232, 233, 1);
-    font-family: 'Mont';
+    font-family: var(--font_family);
     font-weight: 400;
     font-size: 20px;
     line-height: 144.5%;
@@ -1095,7 +1095,7 @@ footer {
 }
 .modal .form .input::-moz-placeholder {
     color: rgba(232, 232, 233, 1);
-    font-family: 'Mont';
+    font-family: var(--font_family);
     font-weight: 400;
     font-size: 20px;
     line-height: 144.5%;
@@ -1103,7 +1103,7 @@ footer {
 }
 .modal .form .input:-moz-placeholder {
     color: rgba(232, 232, 233, 1);
-    font-family: 'Mont';
+    font-family: var(--font_family);
     font-weight: 400;
     font-size: 20px;
     line-height: 144.5%;
@@ -1111,7 +1111,7 @@ footer {
 }
 .modal .form .input:-ms-input-placeholder {
     color: rgba(232, 232, 233, 1);
-    font-family: 'Mont';
+    font-family: var(--font_family);
     font-weight: 400;
     font-size: 20px;
     line-height: 144.5%;
@@ -1119,7 +1119,7 @@ footer {
 }
 
 .modal_btn {
-    font-family: 'Mont';
+    font-family: var(--font_family);
     font-weight: 700;
     font-size: 20px;
     line-height: 144.5%;
