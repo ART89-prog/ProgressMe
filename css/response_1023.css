@@ -75,8 +75,8 @@
 
     header .menu .item > a
     {
-        color: var(--text_block);
-        font-size: 13px;
+        
+        font-size: 15px;
         line-height: 18px;
 
         min-height: 0;
@@ -175,7 +175,8 @@
         height: 8px;
         border-top: 1px solid #000000 !important;
         border-right: 1px solid #000000 !important;
-        right: calc(50% - 150px);
+        right: calc(100% - 150px);
+        top: -3px;
     }
     .posts .post:nth-child(1) {
         margin-top: 30px;
@@ -223,6 +224,14 @@
     }
     footer {
         margin-bottom: 40px;
+    }
+
+    .modal {
+        padding: 50px 40px;
+    }
+    .modal_title {
+        font-size: 38px;
+        margin-bottom: 15px;
     }
     
     

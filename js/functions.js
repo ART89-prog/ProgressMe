@@ -65,6 +65,16 @@ $(() => {
 	})
 
 
+
+
+	$(".footer_item-title").click(function(e) {
+		e.preventDefault();
+		$(".footer_item").removeClass('active');
+		$(this).parent().addClass('active');
+	})
+	
+
+
 	// Моб. версия
 	fiestResize = false
 
