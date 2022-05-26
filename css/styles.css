@@ -1139,3 +1139,202 @@ footer .logo img {
 }
 
 
+
+/* POST-PAGE */
+
+.text_block .cont {
+    max-width: 790px;
+    position: relative;
+}
+.post-page_img {
+    width: 100%;
+    height: auto;
+}
+.post-page_img img {
+    object-fit: cover;
+    display: block;
+}
+.post-page header {
+    margin-bottom: 0px;
+}
+
+
+.text_block {
+    
+}
+.text_block h2 {
+    font-family: 'Mont';
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 129%;
+    letter-spacing: -0.04em;
+    color: #000000;
+    margin-left: 41px;
+    margin-right: 41px;
+    margin-bottom: 35px;
+    max-width: 750px;
+}
+.text_block h3 {
+    font-family: 'Mont';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 148.5%;
+    letter-spacing: -0.04em;
+    color: #000000;
+    margin-left: 41px;
+    margin-right: 41px;
+    margin-bottom: 23px;
+    max-width: 750px;
+}
+.text_block p {
+    font-family: 'Mont';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 178.5%;
+    letter-spacing: -0.04em;
+    color: #000000;
+    margin-left: 41px;
+    margin-right: 41px;
+    margin-bottom: 34px;
+    display: block;
+    max-width: 750px;
+}
+.text_block figure {
+    margin-bottom: 28px;
+}
+.text_block figure img {
+    width: 100%;
+    height: auto;
+    max-width: 750px;
+}
+.text_block figure figcaption {
+    font-family: 'Mont';
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 153.5%;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    text-align: center;    
+    color: #1F3443;
+    margin-top: 37px;
+}
+.text_block blockquote {
+    border-left: 3px solid #67B2FF;
+    padding-left: 28px;
+
+    margin-left: 41px;
+    margin-right: 41px;
+    margin-bottom: 40px;
+    max-width: 750px;
+}
+.text_block blockquote p {
+    font-family: 'Mont';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130.5%;
+    letter-spacing: -0.04em;
+    color: #67B2FF;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.text_block ul {
+    list-style: none;
+    margin-left: 41px;
+    margin-right: 41px;
+    margin-top: 67px;
+    max-width: 750px;
+}
+.text_block ul li {
+    font-family: 'Mont';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 162.5%;
+    letter-spacing: -0.04em;
+    color: #000000;
+    padding-left: 23px;
+    position: relative;
+    margin-bottom: 18px;
+}
+.text_block ul li::before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #000;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.text_block h2.fw400 {
+    font-weight: 400;
+}
+
+.post-page_img {
+    margin-bottom: 78px;
+}
+
+.text_block .soc {
+    margin-left: 41px;
+    margin-right: 41px;
+    margin-bottom: 81px;
+}
+.text_block .soc_text {
+    font-family: 'Mont';
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 153.5%;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #1F3443;
+}
+
+.information {
+    position: absolute;
+    top: 0;
+    right: -330px;
+    width: 300px;
+    display: flex;
+}
+.information_wrap {
+    margin-right: 59px;
+}
+.information_wrap:last-child {
+    margin-right: 0px;
+}
+.information_box {
+    margin-bottom: 20px;
+}
+.information_name {
+    font-family: 'Mont';
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 153.5%;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #1F3443;
+}
+.information_text {
+    font-family: 'Mont';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 153.5%;
+    letter-spacing: -0.07em;
+    text-transform: capitalize;
+    color: #1F3443;
+}
+
+
+.post-page .posts .cont {
+    max-width: 1217px;
+}
+.post-page .posts h2 {
+    font-family: 'Mont';
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 129%;
+    letter-spacing: -0.04em;
+    color: #000000;
+    margin-bottom: 54px;
+}
