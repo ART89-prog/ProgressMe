@@ -459,7 +459,7 @@ header .menu .item:hover .sub_link::before {
     transform: rotate(-45deg);
     border-top: 2px solid #fff;
     border-right: 2px solid #fff;
-    top: -2px;
+    top: -11px;
 }
 header .menu .sub_menu
 {
@@ -1158,17 +1158,25 @@ footer .logo img {
     margin-bottom: 0px;
 }
 
-.text_block h2 {
+.text_block h1 {
     font-family: 'Mont';
     font-weight: 700;
     font-size: 55px;
     line-height: 129%;
     letter-spacing: -0.04em;
     color: #000000;
-    margin-left: 41px;
-    margin-right: 41px;
     margin-bottom: 35px;
     max-width: 667px;
+}
+.text_block h2 {
+    font-family: 'Mont';
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 129%;
+    letter-spacing: -0.04em;
+    color: #000000;
+    max-width: 667px;
+    margin-bottom: 42px;
 }
 .text_block h3 {
     font-family: 'Mont';
@@ -1177,8 +1185,6 @@ footer .logo img {
     line-height: 148.5%;
     letter-spacing: -0.04em;
     color: #000000;
-    margin-left: 41px;
-    margin-right: 41px;
     margin-bottom: 23px;
     max-width: 667px;
 }
@@ -1189,8 +1195,6 @@ footer .logo img {
     line-height: 178.5%;
     letter-spacing: -0.04em;
     color: #000000;
-    margin-left: 41px;
-    margin-right: 41px;
     margin-bottom: 34px;
     display: block;
     max-width: 667px;
@@ -1198,6 +1202,9 @@ footer .logo img {
 .text_block figure {
     margin-bottom: 28px;
     max-width: 750px;
+    width: calc(100% + 82px);
+    margin-left: -41px;
+    margin-right: -41px;
 }
 .text_block figure img {
     width: 100%;
@@ -1219,9 +1226,6 @@ footer .logo img {
 .text_block blockquote {
     border-left: 3px solid #67B2FF;
     padding-left: 28px;
-
-    margin-left: 41px;
-    margin-right: 41px;
     margin-bottom: 40px;
     max-width: 667px;
 }
@@ -1238,9 +1242,8 @@ footer .logo img {
 }
 .text_block ul {
     list-style: none;
-    margin-left: 41px;
-    margin-right: 41px;
     margin-top: 67px;
+    margin-bottom: 65px;
     max-width: 667px;
 }
 .text_block ul li {
@@ -1265,29 +1268,58 @@ footer .logo img {
     left: 0;
     transform: translateY(-50%);
 }
-.text_block h2.fw400 {
-    font-weight: 400;
-}
 .post-page .text_block .information .link a {
     text-decoration: none;
     font-family: var(--font_family);
     font-weight: 600;
     font-size: var(--font_size);
-    line-height: 1;
+    line-height: 25px;
     letter-spacing: -0.07em;
     color: var(--text_color);
     border: 2px solid var(--text_color);
     border-radius: 40px;
-    padding: 3px 12px;
+    padding: 0px 8px;
+    margin-bottom: 5px;
+    display: block;
+    width: 88px;
+    height: 25px;
+    text-transform: capitalize;
+    text-align: center;
 }
+.text_block ol {
+    margin-top: 67px;
+    margin-bottom: 65px;
+    max-width: 667px;
+    padding-left: 22px;
+}
+.text_block ol li {
+    font-family: 'Mont';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 162.5%;
+    letter-spacing: -0.04em;
+    color: #000000;
+    padding-left: 14px;
+    position: relative;
+    margin-bottom: 18px;
+}
+
 
 .post-page_img {
     margin-bottom: 78px;
 }
+.post-page .posts_title {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 129%;
+    letter-spacing: -0.04em;
+    color: #000000;
+    margin-bottom: 54px;
+}
 
-.text_block .soc {
-    margin-left: 41px;
-    margin-right: 41px;
+.text_block {
     margin-bottom: 81px;
 }
 .text_block .soc_text {
@@ -1298,6 +1330,7 @@ footer .logo img {
     letter-spacing: -0.07em;
     text-transform: uppercase;
     color: #1F3443;
+    margin-top: 45px;
 }
 
 .information {
@@ -1345,7 +1378,7 @@ footer .logo img {
 .post-page .posts .cont {
     max-width: 1217px;
 }
-.post-page .posts h2 {
+.post-page .posts h1 {
     font-family: 'Mont';
     font-weight: 400;
     font-size: 55px;
@@ -1353,13 +1386,6 @@ footer .logo img {
     letter-spacing: -0.04em;
     color: #000000;
     margin-bottom: 54px;
-}
-
-.post-page .posts .cont,
-.post-page .subscribe .cont,
-.post-page footer .cont {
-    padding-left: 61px;
-    max-width: 1258px;
 }
 
 .post-page .posts .post {
@@ -1376,15 +1402,17 @@ footer .logo img {
     width: 2px;
     background-color: #fff;
     height: 2px;
+    margin-left: 32px;
 }
   
 .post-page .posts .row::-webkit-scrollbar-thumb {
     height: 2px;
     background-color: #1F3443;
+    margin-left: 32px;
 }
   
 .post-page .posts .row::-webkit-scrollbar-track {
     background-color: #fff;
-    width: 2px;
     height: 2px;
+    margin-left: 32px;
 }

@@ -18,13 +18,11 @@
         width: 100%;
         display: flex;
     }
+    .text_block h1,
     .text_block h2,
-    .text_block h3,
     .text_block p,
     .text_block blockquote,
     .text_block ul {
-        margin-right: 0;
-        margin-left: 0;
         max-width: 100%;
     }
     .post-page .posts .cont, .post-page .subscribe .cont, .post-page footer .cont {

@@ -87,7 +87,7 @@
     .fancybox-slide--html {
         padding: 10px;
     }
-    .text_block h2 {
+    .text_block h1 {
         font-size: 30px;
         margin-bottom: 18px;
     }
@@ -96,6 +96,10 @@
     }
     .information_text {
         font-size: 10px;
+    }
+    .text_block h2, 
+    .post-page .posts_title {
+        font-size: 30px;
     }
     .text_block h3 {
         font-size: 20px;
@@ -122,15 +126,32 @@
         font-size: 12px;
         padding-left: 16px;
         margin-bottom: 8px;
+        margin-top: 20px;
+    }
+    .text_block ol li {
+        font-size: 12px;
+        padding-left: 16px;
+        margin-bottom: 8px;
+        margin-top: 20px;
+        padding-left: 7px;
+    }
+    .text_block ol {
+        padding-left: 12px;
     }
     .text_block ul {
         margin-top: 0;
+    }
+    .text_block figure {
+        width: 100%;
     }
     .post-page .text_block .information .link a {
         font-size: 10px;
     }
     .information_name {
         margin-bottom: 7px;
+    }
+    .text_block blockquote {
+        border-left: 2px solid #67B2FF;
     }
 
 
@@ -154,11 +175,7 @@
         width: 100%;
         margin-bottom: 35px;
     }
- 
-    .mob_header .logo img {
-        width: 140px;
-    }
-    header {
+     header {
         padding: 38px 5px;
     }
     

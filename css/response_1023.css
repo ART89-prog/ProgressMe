@@ -155,13 +155,16 @@
     header .close
     {
         position: absolute;
-        top: -8px;
+        top: 0px;
         right: 0px;
 
         display: block;
 
         width: 50px;
         height: 50px;
+    }
+    .mob_header .logo img {
+        width: 233px;
     }
 
     header .close:before,
@@ -276,7 +279,9 @@
     .post-page .mob_header {
         margin-bottom: 15px;
     }
-    .text_block h2 {
+    .text_block h1,
+    .text_block h2,
+    .post-page .posts_title {
         font-size: 40px;
     }
     .post-page_img {
@@ -286,18 +291,21 @@
         margin-bottom: 12px;
     }
     .text_block h3 {
-        font-size: 21px;
+        font-size: 30 px;
     }
     .text_block blockquote p {
-        font-size: 30px;
+        font-size: 25px;
     }
-    .text_block ul {
+    .text_block ul,
+    .text_block ol {
         margin-top: 40px;
+        margin-bottom: 40px;
     }
-    .text_block ul li {
+    .text_block ul li,
+    .text_block ol li {
         font-size: 21px;
     }
-    .post-page .posts h2 {
+    .post-page .posts h1 {
         font-size: 40px;
         margin-bottom: 25px;
     }
