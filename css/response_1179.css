@@ -7,3 +7,39 @@
    
    
 }
+
+
+@media (max-width: 1250px) {
+  
+    .information {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+    }
+    .text_block h2,
+    .text_block h3,
+    .text_block p,
+    .text_block blockquote,
+    .text_block ul {
+        margin-right: 0;
+        margin-left: 0;
+        max-width: 100%;
+    }
+    .post-page .posts .cont, .post-page .subscribe .cont, .post-page footer .cont {
+        padding-left: 20px;
+        max-width: 1217px;
+    }
+    .text_block figure {
+        margin: 0 auto 28px;
+    }
+    .text_block .soc {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+    
+   
+   
+}

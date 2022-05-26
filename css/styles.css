@@ -1143,7 +1143,6 @@ footer .logo img {
 /* POST-PAGE */
 
 .text_block .cont {
-    /* max-width: 790px; */
     position: relative;
 }
 .post-page_img {
@@ -1158,10 +1157,6 @@ footer .logo img {
     margin-bottom: 0px;
 }
 
-
-.text_block {
-    
-}
 .text_block h2 {
     font-family: 'Mont';
     font-weight: 700;
@@ -1272,9 +1267,6 @@ footer .logo img {
 .text_block h2.fw400 {
     font-weight: 400;
 }
-.post-page .text_block .information .link {
-    margin-left: -13px;
-}
 .post-page .text_block .information .link a {
     text-decoration: none;
     font-family: var(--font_family);
@@ -1286,7 +1278,6 @@ footer .logo img {
     border: 2px solid var(--text_color);
     border-radius: 40px;
     padding: 3px 12px;
-    display: block;
 }
 
 .post-page_img {
@@ -1344,7 +1335,12 @@ footer .logo img {
     color: #1F3443;
 }
 
-
+.post-page .posts .info .name {
+    margin-bottom: 12px;
+}
+.post-page .posts .info .name a {
+    margin-top: 19px;
+}
 .post-page .posts .cont {
     max-width: 1217px;
 }
@@ -1356,4 +1352,11 @@ footer .logo img {
     letter-spacing: -0.04em;
     color: #000000;
     margin-bottom: 54px;
+}
+
+.post-page .posts .cont,
+.post-page .subscribe .cont,
+.post-page footer .cont {
+    padding-left: 61px;
+    max-width: 1258px;
 }

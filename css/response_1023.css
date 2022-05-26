@@ -272,6 +272,35 @@
         font-size: 38px;
         margin-bottom: 15px;
     }
+
+    .post-page .mob_header {
+        margin-bottom: 15px;
+    }
+    .text_block h2 {
+        font-size: 40px;
+    }
+    .post-page_img {
+        margin-bottom: 30px;
+    }
+    .information_name {
+        margin-bottom: 12px;
+    }
+    .text_block h3 {
+        font-size: 21px;
+    }
+    .text_block blockquote p {
+        font-size: 30px;
+    }
+    .text_block ul {
+        margin-top: 40px;
+    }
+    .text_block ul li {
+        font-size: 21px;
+    }
+    .post-page .posts h2 {
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
     
     
    
