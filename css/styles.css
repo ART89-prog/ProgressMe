@@ -1361,3 +1361,30 @@ footer .logo img {
     padding-left: 61px;
     max-width: 1258px;
 }
+
+.post-page .posts .post {
+    width: 369px;
+    flex-shrink: 0;
+}
+
+.post-page .posts .row {
+    overflow: auto;
+    flex-wrap: nowrap;
+}
+
+.post-page .posts .row::-webkit-scrollbar {
+    width: 2px;
+    background-color: #fff;
+    height: 2px;
+}
+  
+.post-page .posts .row::-webkit-scrollbar-thumb {
+    height: 2px;
+    background-color: #1F3443;
+}
+  
+.post-page .posts .row::-webkit-scrollbar-track {
+    background-color: #fff;
+    width: 2px;
+    height: 2px;
+}

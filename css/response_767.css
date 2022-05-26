@@ -126,6 +126,12 @@
     .text_block ul {
         margin-top: 0;
     }
+    .post-page .text_block .information .link a {
+        font-size: 10px;
+    }
+    .information_name {
+        margin-bottom: 7px;
+    }
 
 
 
