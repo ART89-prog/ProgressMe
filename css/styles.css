@@ -1152,6 +1152,7 @@ footer .logo img {
 .post-page_img img {
     object-fit: cover;
     display: block;
+    width: 100%;
 }
 .post-page header {
     margin-bottom: 0px;
