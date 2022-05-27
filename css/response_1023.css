@@ -188,7 +188,10 @@
     {
         transform: rotate(-45deg);
     }
-
+    header .menu > .item:hover > a {
+        background: none;
+        color: var(--text_color);
+    }
     header .menu .item:hover .sub_link::before {
         top: -11px;
     }
