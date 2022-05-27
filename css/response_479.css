@@ -17,6 +17,10 @@
     }
     .post-page .posts .post {
         width: 288px;
+        margin-left: 12px;
+    }
+    .post-page .posts .row {
+        margin-left: -12px;
     }
     .modal {
         padding: 40px 15px 25px;
