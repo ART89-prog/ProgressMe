@@ -15,6 +15,9 @@
         margin-top: 15px;
         margin-bottom: 15px;
     }
+    .post-page .posts .post {
+        width: 230px;
+    }
     .modal {
         padding: 40px 15px 25px;
     }
