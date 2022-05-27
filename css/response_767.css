@@ -100,6 +100,8 @@
     .text_block h2, 
     .post-page .posts_title {
         font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
     .text_block h3 {
         font-size: 20px;
@@ -126,13 +128,11 @@
         font-size: 12px;
         padding-left: 16px;
         margin-bottom: 8px;
-        margin-top: 20px;
     }
     .text_block ol li {
         font-size: 12px;
         padding-left: 16px;
         margin-bottom: 8px;
-        margin-top: 20px;
         padding-left: 7px;
     }
     .text_block ol {
