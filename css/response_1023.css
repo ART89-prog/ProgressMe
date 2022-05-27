@@ -286,9 +286,12 @@
         margin-bottom: 15px;
     }
     .text_block h1,
-    .text_block h2,
-    .post-page .posts_title {
+    .text_block h2 {
         font-size: 40px;
+    }
+    .post-page .posts_title {
+        font-size: 30px;
+        margin-bottom: 35px;
     }
     .post-page_img {
         margin-bottom: 30px;
@@ -300,7 +303,7 @@
         font-size: 30 px;
     }
     .text_block blockquote p {
-        font-size: 25px;
+        font-size: 20px;
     }
     .text_block ul,
     .text_block ol {

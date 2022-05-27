@@ -414,14 +414,14 @@ header .menu > .item > a
 {
     font-family: var(--font_family);
     font-weight: 600;
-    font-size: 23px;
+    font-size: 20px;
     line-height: 38px;
     letter-spacing: -0.04em;
     color: var(--text_color); 
     background: #FFFFFF;
     border: 2px solid var(--text_color);
     border-radius: 50px;
-    padding: 0px 18px;
+    padding: 0px 24px;
     position: relative;
     margin-right: 10px;
 
@@ -472,7 +472,7 @@ header .menu .sub_menu
     visibility: hidden;
 
     width: 270px;
-    padding: 20px 35px 30px;
+    padding: 17px 35px 20px;
 
     transition: .2s linear;
     pointer-events: none;
@@ -525,14 +525,14 @@ header .menu .item > a.touch_link + .sub_menu.show
 
 header .menu .sub_menu > * + *
 {
-    margin-top: 15px;
+    margin-top: 11px;
 }
 
 header .menu .sub_menu a
 {
     font-family: var(--font_family);
     font-weight: 400;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 125.5%;
     letter-spacing: -0.04em;
     
@@ -987,7 +987,7 @@ footer {
 .footer_items {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 113px;
+    margin-bottom: 121px;
 }
 .footer_item ul {
     list-style: none;
@@ -998,21 +998,21 @@ footer {
     font-family: var(--font_family);
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 153.5%;
     letter-spacing: -0.04em;
     color: var(--text_color); 
-    margin-bottom: 6px;
+    margin-bottom: 7px;
     display: block;
 }
 .footer_item-title {
     font-family: var(--font_family);
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 153.5%;
     letter-spacing: -0.04em;
     color: var(--text_color); 
-    margin-bottom: 5px;
+    margin-bottom: 9px;
 }
 .footer_item:last-child ul li {
     margin-right: 20px;
@@ -1024,7 +1024,7 @@ footer {
     margin-right: 15px;
 }
 footer .logo img {
-    width: 225px;
+    width: 215px;
 }
 
 
@@ -1226,7 +1226,7 @@ footer .logo img {
 }
 .text_block blockquote {
     border-left: 3px solid #67B2FF;
-    padding-left: 28px;
+    padding-left: 24px;
     margin-bottom: 40px;
     margin-top: 40px;
     max-width: 667px;
@@ -1234,7 +1234,7 @@ footer .logo img {
 .text_block blockquote p {
     font-family: var(--font_family);
     font-weight: 400;
-    font-size: 35px;
+    font-size: 25px;
     line-height: 130.5%;
     letter-spacing: -0.04em;
     color: #67B2FF;
@@ -1311,11 +1311,11 @@ footer .logo img {
     font-family: var(--font_family);
     font-style: normal;
     font-weight: 400;
-    font-size: 55px;
+    font-size: 35px;
     line-height: 129%;
     letter-spacing: -0.04em;
     color: #000000;
-    margin-bottom: 54px;
+    margin-bottom: 64px;
 }
 
 .text_block {
